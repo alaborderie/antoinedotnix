@@ -1,5 +1,6 @@
 {
 pkgs,
+profile,
 ...
 }: {
   programs.fish = {
@@ -8,7 +9,7 @@ pkgs,
       set fish_greeting # Disable greeting
       starship init fish | source
       thefuck --alias | source
-    ''
+    '';
     shellAliases = {
       sv = "sudo nvim";
       fr = "nh os switch --hostname ${profile}";
@@ -24,32 +25,40 @@ pkgs,
     plugins = [
       {
         name = "fisher";
-        src = pkgs.fetchFromGithub {
+        src = pkgs.fetchFromGitHub {
           owner = "jorgebucaran";
           repo = "fisher";
+          tag = "4.4.5";
+          sha256 = "VC8LMjwIvF6oG8ZVtFQvo2mGdyAzQyluAGBoK8N2/QM=";
         };
       }
       {
-        name = "nvim.fish";
-        src = pkgs.fetchFromGithub {
+        name = "nvm.fish";
+        src = pkgs.fetchFromGitHub {
           owner = "jorgebucaran";
-          repo = "nvim.fish";
+          repo = "nvm.fish";
+          tag = "2.2.17";
+          sha256 = "BNnoP9gLQuZQt/0SOOsZaYOexNN2K7PKWT/paS0BJJY=";
         };
       }
       {
         name = "forgit";
-        src = pkgs.fetchFromGithub {
+        src = pkgs.fetchFromGitHub {
           owner = "wfxr";
           repo = "forgit";
+          tag = "25.05.0";
+          sha256 = "U+MtgunPEmo/kv/lQI2BBi2WUBgt3wFkaUdfRzJWoGQ=";
         };
       }
       {
         name = "plugin-git";
-        src = pkgs.fetchFromGithub {
+        src = pkgs.fetchFromGitHub {
           owner = "jhillyerd";
           repo = "plugin-git";
+          tag = "v0.3";
+          sha256 = "p7vvwisu3mvVOE1DcALbzuGJqWBcE1h71UjaopGdxE0=";
         };
       }
     ];
   };
-};
+}

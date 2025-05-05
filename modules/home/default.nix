@@ -4,6 +4,7 @@ in {
   imports = [
     ./amfora.nix
     ./bash.nix
+    ./fish.nix
     ./bashrc-personal.nix
     ./bat.nix
     ./btop.nix
