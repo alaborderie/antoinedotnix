@@ -2,8 +2,11 @@
   environment.systemPackages = with pkgs; [
     audacity
     discord
-    nodejs
     obs-studio
     zed-editor
+    nodejs
+    rustup
+    go
+    golangci-lint
   ];
 }
