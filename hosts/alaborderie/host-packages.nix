@@ -7,6 +7,9 @@
     nodejs
     rustup
     go
-    golangci-lint
+    gopls
+    nil
+    nixd
+    vtsls
   ];
 }

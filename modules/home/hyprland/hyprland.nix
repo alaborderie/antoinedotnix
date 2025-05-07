@@ -174,6 +174,13 @@ in {
         "QT_SCALE_FACTOR,1"
         "EDITOR,nvim"
       ];
+
+      # trigger when the switch is turning on
+      bindl =
+        [
+          ", switch:on:Lid Switch, exec, hyprctl keyword monitor \"eDP-1,disable\""
+          ", switch:off:Lid Switch, exec, hyprctl keyword monitor \"eDP-1,preferred,auto,auto\""
+        ];
     };
 
     extraConfig = "

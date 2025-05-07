@@ -4,7 +4,10 @@
   gitEmail = "antoine.laborderie@gmail.com";
 
   # Hyprland Settings
-  extraMonitorSettings = "";
+  extraMonitorSettings = "
+    monitor=eDP-1,2256x1504@60.0,2336x1600,1
+    monitor=DP-4,3840x1600@144.0,0x0,auto
+  ";
 
   # Waybar Settings
   clock24h = true;
