@@ -3,7 +3,7 @@
     audacity
     discord
     obs-studio
-    zed-editor
+    zed-editor-fhs
     nodejs
     rustup
     go
