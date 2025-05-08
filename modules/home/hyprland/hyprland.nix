@@ -179,7 +179,7 @@ in {
       bindl =
         [
           ", switch:on:Lid Switch, exec, hyprctl keyword monitor \"eDP-1,disable\""
-          ", switch:off:Lid Switch, exec, hyprctl keyword monitor \"eDP-1,preferred,auto,auto\""
+          ", switch:off:Lid Switch, exec, hyprctl keyword monitor \"eDP-1,2256x1504@60.0,2336x1600,1\""
         ];
     };
 
