@@ -9,5 +9,6 @@
     nil
     nixd
     vtsls
+    moonlight-qt
   ];
 }
