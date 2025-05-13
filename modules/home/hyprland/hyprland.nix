@@ -70,6 +70,7 @@ in {
         follow_mouse = 1;
         float_switch_override_focus = 0;
         sensitivity = 0;
+        accel_profile = "flat";
         touchpad = {
           natural_scroll = true;
           disable_while_typing = true;
