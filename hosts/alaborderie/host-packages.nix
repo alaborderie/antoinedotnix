@@ -1,7 +1,6 @@
 {pkgs, ...}: {
   environment.systemPackages = with pkgs; [
     discord
-    zed-editor-fhs
     nodejs
     rustup
     go
@@ -10,5 +9,6 @@
     nixd
     vtsls
     moonlight-qt
+    ankama-launcher
   ];
 }
